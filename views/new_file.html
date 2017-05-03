@@ -1,0 +1,9 @@
+<!-- If the user has edit permission the show a link -->
+<div has-permission='Edit'>
+  <a href="/#/courses/{{ id }}/edit"> {{ name }}</a>
+</div>
+ 
+<!-- If the user doesn't have edit permission then show text only (Note the "!" before "Edit") -->
+<div has-permission='!Edit'>
+  {{ name }}
+</div>

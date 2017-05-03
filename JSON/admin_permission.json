@@ -1,0 +1,6 @@
+{
+	"msg":"请求成功",
+	"code":200,
+	"result":["article","article_list","article_add","picture_list","picture","product","product_brand","product_classification","product_list","comment_list","comment"
+	,"manager_role","manager_permission","manager_list","manager"]
+}

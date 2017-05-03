@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=en ng-app=adminAPP>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>后台管理</title>
+    <base href="/">
+    <!-- build:css tmpcss/project.min.css -->
+
+<link rel="stylesheet" type="text/css"  href="static/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap-datepicker.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="static/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.login.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <!-- endbuild -->
+</head>
+<body ng-controller="MainCtroller">
+<!--[if lt IE 9]>
+<p>您正在使用 <strong>过期的</strong> 浏览器。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 以获得更佳的体验。</p>
+<![endif]-->
+<div lb-header-directive ng-if='showHeader'></div>
+<div lb-aside-directive ng-if='showHeader'></div>
+<div ng-view id="ng-view" class="m-bd"></div>
+<div id="trans-bg" class="trans-bg"></div>
+<div id="loading" ng-show="loading"></div>
+
+
+
+	
+<!-- build:js tmpjs/lib.min.js -->
+<script src="vendor/jquery-3.0.0.js"></script>
+<script src="vendor/angular.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/ui-bootstrap-tpls.js"></script>
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/jupload-for-legacy.js"></script>
+<script src="vendor/bootstrap-datepicker.min.js"></script>
+<script src="vendor/bootstrap-datepicker.zh-CN.js"></script>
+<script src="vendor/d3.js"></script>
+<!-- endbuild -->
+<!-- build:js tmpjs/project.min.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/services/permissions.js"></script>
+<script src="scripts/directives/lb_permission.js"></script>
+<script src="scripts/services/config_service.js"></script>
+<script src="scripts/services/cache_service.js"></script>
+<script src="scripts/services/request_service.js"></script>
+<script src="scripts/services/interceptor_service.js"></script>
+<script src="scripts/services/utils_service.js"></script>
+<script src="scripts/services/common_service.js"></script>
+
+<script src="scripts/controllers/MainController.js" ></script>
+<script src="scripts/directives/lb_header_directive.js"></script>
+<script src="scripts/directives/lb_aside_directive.js"></script>
+
+<script src="scripts/filters/common_filter.js"></script>
+
+<script src="scripts/controllers/IndexController.js"></script>
+<script src="scripts/controllers/AdminController.js"></script>
+<script src="scripts/controllers/UnauthorizedController.js"></script>
+<script src="scripts/controllers/LoginController.js"></script>
+<script src="scripts/controllers/PictureController.js"></script>
+<script src="scripts/controllers/ArticleController.js"></script>
+<script src="scripts/controllers/ProductController.js"></script>
+<script src="scripts/controllers/CommentController.js"></script>
+
+</body>
+</html>
